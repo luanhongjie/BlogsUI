@@ -226,6 +226,192 @@
         .said-module {
             padding: 5rem 0 0;
         }
+
+        .said-module .head {
+            text-align: center;
+            padding: .8rem;
+        }
+
+        .said-module .head h1 {
+            font-size: 2.2rem;
+            font-weight: 200;
+            letter-spacing: .3rem;
+            line-height: 1.2rem;
+            margin: 0;
+        }
+
+        .said-module .head p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            padding: .8rem;
+            margin: 0;
+        }
+
+        .said-module .head p i {
+            color: #777;
+            padding: 0 .8rem;
+        }
+
+        .saidfont {
+            font-size: 1rem;
+            font-family: "saidfont" !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .icon-quotes-left:before {
+            content: "\e63c";
+        }
+
+        .icon-quotes-right:before {
+            content: "\e63a";
+        }
+
+        .said-module .head .link {
+            font-size: 1rem;
+            color: #4078c0;
+        }
+
+        .link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: block;
+            bottom: -5px;
+            width: 100%;
+            height: 1px;
+            background-color: currentColor;
+            transform: scale(0);
+            transition: transform .5s;
+        }
+
+        .said-module .content {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .said-module .content .item {
+            padding: 1.1rem 1.6rem .8rem;
+            width: 33.3333%;
+            float: left;
+            position: relative;
+        }
+
+        .item.said-item .main {
+            width: 100%;
+            position: relative;
+            height: 280px;
+            background-size: 547px 300px;
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+        }
+
+        .said-module .content .item.said-item .main .mask {
+            background: linear-gradient(rgba(61, 61, 61, 0.9), rgba(20, 40, 50, 0.9)) repeat scroll 0 0 #222;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            opacity: 0;
+            transition: opacity .3s ease-in-out 0s;
+        }
+
+        .said-module .content .item.said-item .main .mask .summary {
+            color: #fff;
+            text-align: justify;
+            padding: 10px;
+            text-indent: 2em;
+            width: 100%;
+            margin: auto;
+        }
+
+        .said-module .content .item.said-item .main .mask .summary p {
+            margin: 0;
+        }
+
+        .said-module .content .item h2 {
+            margin: 0;
+            font-weight: 200;
+            line-height: 2;
+        }
+
+        .said-module .content .item.said-item .detail .date {
+            color: #999;
+            display: block;
+            text-align: center;
+        }
+
+        .said-module .content .item.said-item .detail a {
+            display: block;
+            text-align: center;
+            color: #444;
+            line-height: 2;
+            font-size: 1.56rem;
+        }
+
+        .clear-fix::after {
+            clear: both;
+            float: none !important;
+            content: '';
+            display: block;
+        }
+
+        .said-module .head p {
+            font-size: 1.2rem;
+            line-height: 2;
+            padding: .8rem;
+            margin: 0;
+        }
+
+        .said-module .content .item.blog-item .footer {
+            padding-bottom: 3px;
+            color: #999;
+            overflow: hidden;
+        }
+
+        .saidfont {
+            font-size: 1rem;
+        }
+
+        .saidfont {
+            font-family: "saidfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .said-module .content .item.blog-item .footer i::before {
+            margin-right: .2rem;
+        }
+
+        .said-module .content .item.blog-item .footer i:not(:first-child) {
+            padding-left: .5rem;
+        }
+
+        .saidfont {
+            font-size: 1rem;
+        }
+
+        .saidfont {
+            font-family: "saidfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .said-module .content .item.blog-item .footer i::before {
+            margin-right: .2rem;
+        }
+
+        .said-module .content .item.blog-item .footer span {
+            float: right;
+        }
     </style>
 
 
@@ -282,7 +468,7 @@
                         <h1>听·说</h1>
                         <p>
                             <i class="saidfont icon-quotes-left"></i>
-                            "让思想安静片刻，让耳朵沉沦音乐"
+                            让思想安静片刻，让耳朵沉沦音乐
                             <i class="saidfont icon-quotes-right"></i>
                         </p>
                         <a class="link" href="/said">更多故事</a>
@@ -290,7 +476,7 @@
 
                     <ul class="content clear-fix">
                         <li class="item said-item">
-                            <div class="main" style="background-image:url(//static.tasaid.com/articles/2550f1fef439986b8fa25f316deb7203.jpeg!thumb)">
+                            <div class="main" style="background-image:url(item1.jpg)">
                                 <div class="mask">
                                     <div class="summary">
                                         <p class="">人这一生大约会遇到 80000 人</p>
@@ -310,7 +496,7 @@
                         </li>
 
                         <li class="item said-item">
-                            <div class="main" style="background-image:url(//static.tasaid.com/articles/c988c40d151aa2f998d628f765d5dccf.jpeg!thumb)">
+                            <div class="main" style="background-image:url(item2.jpg)">
                                 <div class="mask">
                                     <div class="summary">
                                         <p class="">于是有事发生让你醒来，不是吗？是梦还是别的？</p>
@@ -329,7 +515,7 @@
                         </li>
 
                         <li class="item said-item">
-                            <div class="main" style="background-image:url(//static.tasaid.com/articles/2b8707b64a45c26d264bd567fab6efab.jpeg!thumb)">
+                            <div class="main" style="background-image:url(item3.jpg)">
                                 <div class="mask">
                                     <div class="summary">
                                         <p class="">当你听说曾经与你立下海誓山盟的女孩成了两个孩子的母亲</p>
@@ -345,52 +531,56 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+                <div class="said-module">
+                    <div class="head">
+                        <h1>博客精选</h1>
+                        <p>
+                            <i class="saidfont icon-baojiaquotation2"></i>
+                            泡上Java，我们用舒服的方式聊聊技术
+                            <i class="saidfont icon-baojiaquotation"></i>
+                        </p>
+                        <a class="link" href="/blog">更多精彩技术文章</a>
+                    </div>
 
-            <div class="said-module">
-                <div class="head">
-                    <h1>博客精选</h1>
-                    <p>
-                        <i class="saidfont icon-baojiaquotation2"></i>
-                        泡上Java，我们用舒服的方式聊聊技术
-                        <i class="saidfont icon-baojiaquotation"></i>
-                    </p>
-                    <a class="link" href="/blog">更多精彩技术文章</a>
+                    <ul class="content clear-fix">
+                        <li class="item blog-item">
+                            <h2 class="ellipsis"><a class="link" href="/blog/2019022017450863.html">TypeScript 中的多种
+                                    import
+                                    解义</a></h2>
+                            <div class="summary">
+                                <p class="">JavaScript 中有多种 export 的方式，而 TypeScript 中针对这种情况做了多种 import 语法，最常见的就是 import
+                                    *
+                                    as path from 'path' 这种。</p>
+                                <p class="">这篇文章主要来讲解 TypeScript 中不同的 import 具有什么意义。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i class="saidfont icon-yonghu">382</i><span>2019-02-20
+                                    17:45</span></div>
+                        </li>
+                        <li class="item blog-item">
+                            <h2 class="ellipsis"><a class="link" href="/blog/2018122819513079.html">使用 TypeScript
+                                    编写一个完善包含测试、文档和持续集成的库</a></h2>
+                            <div class="summary">
+                                <p class="">这篇文章主要是讲述如何使用 TypeScript 编写一个完善，包含测试、文档、持续集成的库，涵盖了编写整个库所需要的技术和工具。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i class="saidfont icon-yonghu">610</i><span>2018-12-28
+                                    19:51</span></div>
+                        </li>
+                        <li class="item blog-item">
+                            <h2 class="ellipsis"><a class="link" href="/blog/2018090320413666.html">Web 前端解决方案指南 -
+                                    社区的演变</a></h2>
+                            <div class="summary">
+                                <p class="">今日的 web 和几年前的 web 已经演变了很多，多变而又复杂</p>
+                                <p class="">从过去传统局限在前后一体，逐渐进化到今天技术繁多</p>
+                                <p class="">一直延伸到 webapp，SSR 甚至发展到客户端</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">JavaScript</i><i class="saidfont icon-yonghu">724</i><span>2018-09-03
+                                    20:41</span></div>
+                        </li>
+                    </ul>
                 </div>
-
-                <ul class="content clear-fix">
-                    <li class="item blog-item">
-                        <h2 class="ellipsis"><a class="link" href="/blog/2019022017450863.html">TypeScript 中的多种 import
-                                解义</a></h2>
-                        <div class="summary">
-                            <p class="">JavaScript 中有多种 export 的方式，而 TypeScript 中针对这种情况做了多种 import 语法，最常见的就是 import *
-                                as path from 'path' 这种。</p>
-                            <p class="">这篇文章主要来讲解 TypeScript 中不同的 import 具有什么意义。</p>
-                        </div>
-                        <div class="footer"><i class="saidfont icon-category">TypeScript</i><i class="saidfont icon-yonghu">382</i><span>2019-02-20
-                                17:45</span></div>
-                    </li>
-                    <li class="item blog-item">
-                        <h2 class="ellipsis"><a class="link" href="/blog/2018122819513079.html">使用 TypeScript
-                                编写一个完善包含测试、文档和持续集成的库</a></h2>
-                        <div class="summary">
-                            <p class="">这篇文章主要是讲述如何使用 TypeScript 编写一个完善，包含测试、文档、持续集成的库，涵盖了编写整个库所需要的技术和工具。</p>
-                        </div>
-                        <div class="footer"><i class="saidfont icon-category">TypeScript</i><i class="saidfont icon-yonghu">610</i><span>2018-12-28
-                                19:51</span></div>
-                    </li>
-                    <li class="item blog-item">
-                        <h2 class="ellipsis"><a class="link" href="/blog/2018090320413666.html">Web 前端解决方案指南 - 社区的演变</a></h2>
-                        <div class="summary">
-                            <p class="">今日的 web 和几年前的 web 已经演变了很多，多变而又复杂</p>
-                            <p class="">从过去传统局限在前后一体，逐渐进化到今天技术繁多</p>
-                            <p class="">一直延伸到 webapp，SSR 甚至发展到客户端</p>
-                        </div>
-                        <div class="footer"><i class="saidfont icon-category">JavaScript</i><i class="saidfont icon-yonghu">724</i><span>2018-09-03
-                                20:41</span></div>
-                    </li>
-                </ul>
             </div>
+
+
         </section>
 
     </div>
