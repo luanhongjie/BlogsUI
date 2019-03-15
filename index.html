@@ -236,7 +236,7 @@
             font-size: 2.2rem;
             font-weight: 200;
             letter-spacing: .3rem;
-            line-height: 1.2rem;
+            line-height: 2.2rem;
             margin: 0;
         }
 
@@ -360,12 +360,6 @@
             display: block;
         }
 
-        .said-module .head p {
-            font-size: 1.2rem;
-            line-height: 2;
-            padding: .8rem;
-            margin: 0;
-        }
 
         .said-module .content .item.blog-item .footer {
             padding-bottom: 3px;
@@ -377,14 +371,6 @@
             font-size: 1rem;
         }
 
-        .saidfont {
-            font-family: "saidfont" !important;
-            font-size: 16px;
-            font-style: normal;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
         .said-module .content .item.blog-item .footer i::before {
             margin-right: .2rem;
         }
@@ -393,17 +379,7 @@
             padding-left: .5rem;
         }
 
-        .saidfont {
-            font-size: 1rem;
-        }
 
-        .saidfont {
-            font-family: "saidfont" !important;
-            font-size: 16px;
-            font-style: normal;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
 
         .said-module .content .item.blog-item .footer i::before {
             margin-right: .2rem;
@@ -412,10 +388,86 @@
         .said-module .content .item.blog-item .footer span {
             float: right;
         }
+
+        .said-module .content {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .ellipsis {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .link {
+            position: relative;
+        }
+
+        .said-module .content .item.blog-item .summary {
+            color: #777;
+            text-align: justify;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .said-module .content .item.blog-item .summary p {
+            margin: 0;
+        }
+
+        #footer {
+            overflow: hidden;
+            position: fixed;
+            z-index: 2;
+            height: 371px;
+            background: none repeat scroll 0 0 #292929;
+            bottom: 0;
+            left: 0;
+            display: block;
+            padding: 2rem 0;
+            width: 100%;
+            color: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #footer .content {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            width: 980px;
+            font-size: 1rem;
+            line-height: 1.8rem;
+            margin: 0 auto;
+        }
+
+        #footer .content .footer-item:first-child {
+            margin-left: 0;
+        }
+
+        #footer .content .footer-item {
+            flex: 1;
+            margin: 0 1rem;
+        }
+
+        #footer .content .footer-item .title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 3rem;
+        }
+
+        #footer a {
+            color: #ccc;
+        }
+
+        #footer .copyright {
+            width: 980px;
+            margin: 0 auto;
+            color: #a3a2a2;
+        }
     </style>
-
-
-
 
 
 </head>
