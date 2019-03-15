@@ -64,6 +64,8 @@
             outline: none;
         }
 
+
+
         #header {
             padding: 10px 0 15px 0;
             width: 980px;
@@ -89,6 +91,141 @@
             background-position: center;
             background: url(logo.png) no-repeat;
         }
+
+        #header #nav {
+            float: right;
+            position: relative;
+            z-index: 1;
+        }
+
+        #header #nav #nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #header #nav #nav-menu li {
+            float: left;
+        }
+
+        #header #nav #nav-menu li a {
+            display: block;
+            width: 4.4rem;
+            text-align: center;
+            line-height: 3.4rem;
+            color: #606060;
+            transition: color .2s ease-in-out 0s;
+        }
+
+        a:hover {}
+
+        #header #nav #nav-menu li.nav-active a {
+            color: #59c6ff !important;
+        }
+
+        #header #nav .line {
+            width: 4.4rem;
+            border-bottom: 1px solid #33b5e5;
+            position: absolute;
+            bottom: 0;
+            z-index: 5;
+            transition: all .2s ease-in-out 0s;
+        }
+
+
+
+        .container .banner-bg {
+            overflow: hidden;
+            width: 100%;
+            height: 43.8rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container .banner-bg .banner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .container .banner-bg .banner .banner-item {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            text-align: center;
+            background-position: center bottom;
+            background-size: 2110px 800px;
+            z-index: 1;
+        }
+
+        .container .banner-bg .banner .banner-item .banner-content {
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: .5rem 0 1rem;
+            text-align: center;
+            width: 960px;
+            max-height: 380px;
+            background: url(focus_bg.png) 100%;
+        }
+
+        .container .banner-bg .banner .banner-item.white .banner-content .title,
+        .container .banner-bg .banner .banner-item.white .banner-content .context {
+            color: #fff;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        }
+
+        .container .banner-bg .banner .banner-item .banner-content .title {
+            margin: 0;
+            font-size: 2.2rem;
+            line-height: 5rem;
+            font-weight: normal;
+        }
+
+        .container .banner-bg .banner .banner-item .banner-content .context p {
+            margin: 0;
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+
+        #content {
+            padding: 40px 0;
+            margin-bottom: 371px;
+        }
+
+        article,
+        aside,
+        footer,
+        header,
+        nav,
+        section {
+            display: block;
+        }
+
+        #content .said-content {
+            min-width: 1000px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .said-module:first-child {
+            padding-top: 1.6rem;
+        }
+
+        .said-module {
+            padding: 5rem 0 0;
+        }
     </style>
 
 
@@ -104,7 +241,7 @@
                 <a class="logo" title="听说" href="/"></a>
             </div>
             <nav id="nav">
-                <ul id="nav-mean">
+                <ul id="nav-menu">
                     <li class="nav-active">
                         <a href="/">首页</a>
                     </li>
@@ -123,7 +260,7 @@
 
         <div class="banner-bg">
             <ul class="banner">
-                <li class="banner-item white" style="background-image:url(//static.tasaid.com/images/bg/said-bg.3e0ae7d3.jpg)">
+                <li class="banner-item white" style="background-image:url(said-bg1.jpg)">
                     <div class="banner-content">
                         <h3 class="title">世界很大，风住过这里</h3>
                         <div class="context">
