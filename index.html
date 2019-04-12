@@ -64,7 +64,9 @@
             outline: none;
         }
 
-
+        a:hover{
+            color: #59c6ff !important;
+        }
 
         #header {
             padding: 10px 0 15px 0;
@@ -115,13 +117,15 @@
             text-align: center;
             line-height: 3.4rem;
             color: #606060;
-            transition: color .2s ease-in-out 0s;
+            
         }
-
-        a:hover {}
 
         #header #nav #nav-menu li.nav-active a {
             color: #59c6ff !important;
+        }
+
+        a:hover {
+            transition: color .2s ease-in-out 0s;
         }
 
         #header #nav .line {
@@ -493,6 +497,7 @@
                         <a href="/about">关于</a>
                     </li>
                 </ul>
+                <span class="line" id="nav-line" style="left: 0px;"></span>
             </nav>
         </header>
 
@@ -561,8 +566,8 @@
                                 </div>
                             </div>
                             <div class="detail">
-                                <h2><a class="ellipsis" title="羔羊在号叫" href="/said/2018090421302059.html">羔羊在号叫</a></h2><time
-                                    class="date">2018-09-04 21:30</time>
+                                <h2><a class="ellipsis" title="羔羊在号叫" href="/said/2018090421302059.html">羔羊在号叫</a></h2>
+                                <time class="date">2018-09-04 21:30</time>
                             </div>
                         </li>
 
@@ -577,8 +582,8 @@
                                 </div>
                             </div>
                             <div class="detail">
-                                <h2><a class="ellipsis" title="有一天与某一天" href="/said/2018062113320757.html">有一天与某一天</a></h2><time
-                                    class="date">2018-06-21 13:32</time>
+                                <h2><a class="ellipsis" title="有一天与某一天" href="/said/2018062113320757.html">有一天与某一天</a>
+                                </h2><time class="date">2018-06-21 13:32</time>
                             </div>
                         </li>
                     </ul>
@@ -605,7 +610,8 @@
                                     as path from 'path' 这种。</p>
                                 <p class="">这篇文章主要来讲解 TypeScript 中不同的 import 具有什么意义。</p>
                             </div>
-                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i class="saidfont icon-yonghu">382</i><span>2019-02-20
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">382</i><span>2019-02-20
                                     17:45</span></div>
                         </li>
                         <li class="item blog-item">
@@ -614,7 +620,8 @@
                             <div class="summary">
                                 <p class="">这篇文章主要是讲述如何使用 TypeScript 编写一个完善，包含测试、文档、持续集成的库，涵盖了编写整个库所需要的技术和工具。</p>
                             </div>
-                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i class="saidfont icon-yonghu">610</i><span>2018-12-28
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">610</i><span>2018-12-28
                                     19:51</span></div>
                         </li>
                         <li class="item blog-item">
@@ -625,7 +632,8 @@
                                 <p class="">从过去传统局限在前后一体，逐渐进化到今天技术繁多</p>
                                 <p class="">一直延伸到 webapp，SSR 甚至发展到客户端</p>
                             </div>
-                            <div class="footer"><i class="saidfont icon-category">JavaScript</i><i class="saidfont icon-yonghu">724</i><span>2018-09-03
+                            <div class="footer"><i class="saidfont icon-category">JavaScript</i><i
+                                    class="saidfont icon-yonghu">724</i><span>2018-09-03
                                     20:41</span></div>
                         </li>
                     </ul>
@@ -641,8 +649,10 @@
         <section class="content">
             <div class="footer-item friends">
                 <div class="title">推荐</div>
-                <div><a class="link" href="/link?url=https%3A%2F%2Ftslang.cn%2F" target="_blank">TypeScript 中文网</a></div>
-                <div><a class="link" href="/link?url=%2F%2Fshang.qq.com%2Fwpa%2Fqunwpa%3Fidkey%3De42d074293d1ec3d6fd5ca632323494193f2ccb1f51e7b545ca413d627895b7d"
+                <div><a class="link" href="/link?url=https%3A%2F%2Ftslang.cn%2F" target="_blank">TypeScript 中文网</a>
+                </div>
+                <div><a class="link"
+                        href="/link?url=%2F%2Fshang.qq.com%2Fwpa%2Fqunwpa%3Fidkey%3De42d074293d1ec3d6fd5ca632323494193f2ccb1f51e7b545ca413d627895b7d"
                         target="_blank">QQ 群：377786580</a></div>
             </div>
             <div class="footer-item">
@@ -655,8 +665,8 @@
                 <p>内容基本都是自己原创的，引用的地方都会给出相关引用，如有疏漏，联系方式：linkFly6<i class="saidfont icon-at"></i>live.com</p>
             </div>
         </section>
-        <div class="copyright">©2019 Said:听说 - linkFly - <a class="link" href="/link?url=http%3A%2F%2Fwww.miitbeian.gov.cn%2F"
-                target="_blank">皖ICP备 16018864 号</a></div>
+        <div class="copyright">©2019 Said:听说 - linkFly - <a class="link"
+                href="/link?url=http%3A%2F%2Fwww.miitbeian.gov.cn%2F" target="_blank">皖ICP备 16018864 号</a></div>
     </footer>
 </body>
 
