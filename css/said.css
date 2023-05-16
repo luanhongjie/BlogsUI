@@ -1,0 +1,185 @@
+.said-content {
+    width: 825px;
+    position: relative;
+}
+.said-content .item:first-child {
+    margin-top: 3rem;
+}
+.said-content .item {
+    margin: 5rem 0;
+    position: relative;
+}
+
+.said-content .item .image {
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.said-content .item .context {
+    margin-left: 50%;
+    padding: 0 1.4rem 0 2rem;
+}
+.said-content .item .context .title {
+    margin: 0;
+}
+.said-content .item .context .title a {
+    display: block;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #666;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.said-content .item .context .summary {
+    overflow: hidden;
+    padding: 0.8rem 0 1rem;
+    height: 9.7rem;
+}
+.said-content .item .context .summary .preview {
+    padding-left: 2rem;
+    border-left: 3px solid #b0d7fe;
+    margin: auto;
+}
+.said-content .item .context .summary .preview p {
+    margin: 0;
+    text-align: justify;
+    word-break: break-all;
+}
+.said-content .item .context .footer {
+    text-align: left;
+    overflow: hidden;
+    padding-top: 0.5rem;
+    position: relative;
+}
+.said-content .item .context .footer .music {
+    display: inline-block;
+}
+.said-content .item .context .footer .music .music-image {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 2px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+.said-content .item .context .footer .music .music-image .music-ring {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 25%;
+    left: 38%;
+    position: absolute;
+    top: 38%;
+    width: 25%;
+}
+.said-content .item .context .footer .music .music-image img {
+    display: block;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+.said-content .item .context .footer .music .music-info {
+    width: 20rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 1.5rem;
+    list-style: none;
+}
+.said-content .item .context .footer .more {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+}
+.said-content .item .context .footer .more i {
+    margin-right: 0.8rem;
+    color: #888;
+    font-size: 1rem;
+}
+.said-content .item .context .footer .more i::before {
+    padding: 0 0.2rem;
+}
+
+.icon-yonghu:before {
+    content: "\e796";
+}
+.said-content .item .context .footer .more time {
+    background-color: #999;
+    border-radius: 0.6rem;
+    color: #fff;
+    font-size: 13px;
+    padding: 0.1rem 0.9rem;
+}
+
+/*分页*/
+.said-content .page {
+    text-align: center;
+}
+.said-content .page a {
+    position: relative;
+}
+
+.said-content .page a, .said-content .page span {
+    background: #dfdfdf;
+    border-radius: 3px;
+    padding: 0.4rem 0.8rem;
+    margin-left: 0.4rem;
+    transition: .2s;
+    color: #444;
+}
+.said-content .page a.pre::before {
+    left: -1.9rem;
+    border-right-color: #dfdfdf;
+}
+.said-content .page a.pre::before, .said-content .page a.next::before {
+    transition: .2s;
+    border: 1rem solid transparent;
+    position: absolute;
+    content: '';
+    top: 0;
+}
+.said-content .page a.pre::before {
+    left: -1.9rem;
+    border-right-color: #dfdfdf;
+}
+.said-content .page a.next::before {
+    right: -1.9rem;
+    border-left-color: #dfdfdf;
+}
+.said-content .page span {
+    color: #fafafa;
+    background: #75b4f4;
+}
+
+#content .said-content >.context .article .html img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    cursor: zoom-in;
+}
+.button {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: #40a9ff;
+    border: 1px solid #40a9ff;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blog.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div id="nav-logo">
+                <a class="logo" title="听说" href="/"></a>
+            </div>
+            <nav id="nav">
+                <ul id="nav-menu">
+                    <li>
+                        <a href="/">首页</a>
+                    </li>
+                    <li class="nav-active">
+                        <a href="./blog.html">blog</a>
+                    </li>
+                    <li>
+                        <a href="said.html">听说</a>
+                    </li>
+                    <li>
+                        <a href="/about">关于</a>
+                    </li>
+                </ul>
+                <span class="line" id="nav-line" style="left: 60px;"></span>
+            </nav>
+        </header>
+
+        <div class="banner-bg">
+            <ul class="banner">
+                <li class="banner-item white" style="background-image:url(./img/said-bg2.jpg)">
+                    <div class="banner-content">
+                        <h3 class="title">Write the code, change the world</h3>
+                        <div class="context">
+                            <p>console.log('Hello, wrold!')</p>
+                            <p>Console.WriteLine('Hello, wrold!')</p>
+                            <p>System.out.println('Hello, wrold!')</p>
+                            <p>fmt.Println('Hello, wrold!')</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <section id="content">
+            <div class="blog-head">
+                <div class="cate-head">
+                    <h3 class="title">全部文章 - 共 24 篇<a class="cate-btn" id="cate-btn"><span>分类</span><label></label></a>
+                    </h3>
+                </div>
+                <div class="categorys" id="categorys" data-open="false">
+                    <div class="box">
+                        <ul class="content">
+                            <li class="item"><a href="/blog/cate/HTTPS"><img class="icon"
+                                        src="//static.tasaid.com/images/logos/https.png!icon">HTTPS</a></li>
+                            <li class="item"><a href="/blog/cate/said"><img class="icon"
+                                        src="//static.tasaid.com/images/logos/default.png!icon">said</a></li>
+                            <li class="item"><a href="/blog/cate/TypeScript"><img class="icon"
+                                        src="//static.tasaid.com/images/logos/ts.png!icon">TypeScript</a></li>
+                            <li class="item"><a href="/blog/cate/JavaScript"><img class="icon"
+                                        src="//static.tasaid.com/images/logos/js.png!icon">JavaScript</a></li>
+                            <li class="item"><a href="/blog/cate/vue"><img class="icon"
+                                        src="//static.tasaid.com/images/logos/vue.png!icon">vue</a></li>
+                            <li class="item"><a href="/blog/cate/css"><img class="icon"
+                                        src="//static.tasaid.com/images/logos/css.png!icon">css</a></li>
+                            <li class="item"><a href="/blog/cate/HTML"><img class="icon"
+                                        src="//static.tasaid.com/images/logos/html.png!icon">HTML</a></li>
+                            <li class="item"><a href="/blog/cate/NodeJs"><img class="icon"
+                                        src="//static.tasaid.com/images/logos/nodejs.png!icon">NodeJs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="said-content">
+                <section class="blog-content">
+                    <div class="timespan"><span class="txt">2021年10月</span></div>
+                    <article class="item">
+                        <div class="date"><span>13日</span><small>22:55</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">一段职业生涯的总结</a></h2>
+                            <div class="summary">
+                                <p class="">这 5 年的工作经历中自己发生了许许多多的改变，最为欣慰的无论于内心，还是客观结果上，这 5 年来收获满满，自觉无愧于心。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">said</i><i
+                                    class="saidfont icon-yonghu">5689</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2019年02月</span></div>
+                    <article class="item">
+                        <div class="date"><span>20日</span><small>17:45</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">TypeScript 中的多种 import 解义</a></h2>
+                            <div class="summary">
+                                <p class="">JavaScript 中有多种 export 的方式，而 TypeScript 中针对这种情况做了多种 import 语法，最常见的就是 import
+                                    * as path from 'path' 这种。</p>
+                                <p class="">这篇文章主要来讲解 TypeScript 中不同的 import 具有什么意义。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">12754</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2018年12月</span></div>
+                    <article class="item">
+                        <div class="date"><span>28日</span><small>19:51</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">使用 TypeScript 编写一个完善包含测试、文档和持续集成的库</a></h2>
+                            <div class="summary">
+                                <p class="">这篇文章主要是讲述如何使用 TypeScript 编写一个完善，包含测试、文档、持续集成的库，涵盖了编写整个库所需要的技术和工具。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">11745</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2018年09月</span></div>
+                    <article class="item">
+                        <div class="date"><span>03日</span><small>20:41</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">Web 前端解决方案指南 - 社区的演变</a></h2>
+                            <div class="summary">
+                                <p class="">今日的 web 和几年前的 web 已经演变了很多，多变而又复杂</p>
+                                <p class="">从过去传统局限在前后一体，逐渐进化到今天技术繁多</p>
+                                <p class="">一直延伸到 webapp，SSR 甚至发展到客户端</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">JavaScript</i><i
+                                    class="saidfont icon-yonghu">5354</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2018年03月</span></div>
+                    <article class="item">
+                        <div class="date"><span>14日</span><small>15:09</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">Node.js 部署免费/自动续订 HTTPS</a></h2>
+                            <div class="summary">
+                                <p class="">随着互联网快速发展，互联网信息安全越来越受到大家重视。</p>
+                                <p class="">HTTPS 应该是近两年各大厂商都在尽力普及的技术之一。</p>
+                                <p class="">这篇文章就跟大家介绍一下 Node.js 如何部署免费 HTTPS 以及简单的部署 HTTP/2</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">NodeJs</i><i
+                                    class="saidfont icon-yonghu">4877</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>08日</span><small>02:10</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">Said 2.0 的一些开发经验</a></h2>
+                            <div class="summary">
+                                <p class="">Said 在三个月内使用了新的技术进行了重写</p>
+                                <p class="">这三个月收获丰厚</p>
+                                <p class="">和大家分享一下此次架构的一些心路历程</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">said</i><i
+                                    class="saidfont icon-yonghu">3368</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2018年01月</span></div>
+                    <article class="item">
+                        <div class="date"><span>18日</span><small>13:27</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">JavaScript 中的 task queues</a></h2>
+                            <div class="summary">
+                                <p class="">JavaScript 是单线程的，所有的任务都放在 "任务队列" 中，从而衍生了 event loops 机制</p>
+                                <p class="">我们这次要讨论的，则是 event loop 的背后：</p>
+                                <p class="">task queues 和异步任务 API 的执行细节</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">JavaScript</i><i
+                                    class="saidfont icon-yonghu">5504</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2017年11月</span></div>
+                    <article class="item">
+                        <div class="date"><span>02日</span><small>22:51</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">JavaScript 和 TypeScript 交叉口 —— 类型定义文件(*.d.ts)</a>
+                            </h2>
+                            <div class="summary">
+                                <p class="">TypeScript 的核心在于静态类型。但是主流的库都是 JavaScript 编写的，那么如何让这些第三方库也可以类型呢？</p>
+                                <p class="">这篇文章我们来讲解 JavaScript 和 TypeScript 的静态类型交叉口 —— 类型定义文件。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">16983</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2017年10月</span></div>
+                    <article class="item">
+                        <div class="date"><span>11日</span><small>23:31</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章" href="blog-detail.html">从
+                                    JavaScript 到 TypeScript 6 - Vue 引入 TypeScript</a></h2>
+                            <div class="summary">
+                                <p class="">随着应用的庞大，项目中 JavaScript 的代码也会越来越臃肿，这时候许多 JavaScript 的语言弊端就会愈发明显。</p>
+                                <p class="">而 TypeScript 的出现，就是着力于解决 JavaScript 语言天生的弱势：静态类型。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">10026</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>11日</span><small>23:30</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章" href="blog-detail.html">从
+                                    JavaScript 到 TypeScript 5 - 路由进化</a></h2>
+                            <div class="summary">
+                                <p class="">随着应用的庞大，项目中 JavaScript 的代码也会越来越臃肿，这时候许多 JavaScript 的语言弊端就会愈发明显。</p>
+                                <p class="">而 TypeScript 的出现，就是着力于解决 JavaScript 语言天生的弱势：静态类型。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">7277</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>11日</span><small>23:30</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章" href="blog-detail.html">从
+                                    JavaScript 到 TypeScript 4 - 装饰器和反射</a></h2>
+                            <div class="summary">
+                                <p class="">随着应用的庞大，项目中 JavaScript 的代码也会越来越臃肿，这时候许多 JavaScript 的语言弊端就会愈发明显。</p>
+                                <p class="">而 TypeScript 的出现，就是着力于解决 JavaScript 语言天生的弱势：静态类型。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">12211</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>11日</span><small>23:29</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章" href="blog-detail.html">从
+                                    JavaScript 到 TypeScript 3 - 引入和编译</a></h2>
+                            <div class="summary">
+                                <p class="">随着应用的庞大，项目中 JavaScript 的代码也会越来越臃肿，这时候许多 JavaScript 的语言弊端就会愈发明显。</p>
+                                <p class="">而 TypeScript 的出现，就是着力于解决 JavaScript 语言天生的弱势：静态类型。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">10347</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>11日</span><small>23:27</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章" href="blog-detail.html">从
+                                    JavaScript 到 TypeScript 2 - 基础特性和类型推导</a></h2>
+                            <div class="summary">
+                                <p class="">随着应用的庞大，项目中 JavaScript 的代码也会越来越臃肿，这时候许多 JavaScript 的语言弊端就会愈发明显。</p>
+                                <p class="">而 TypeScript 的出现，就是着力于解决 JavaScript 语言天生的弱势：静态类型。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">11076</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>11日</span><small>23:19</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章" href="blog-detail.html">从
+                                    JavaScript 到 TypeScript 1 - 什么是 TypeScript</a></h2>
+                            <div class="summary">
+                                <p class="">随着应用的庞大，项目中 JavaScript 的代码也会越来越臃肿，这时候许多 JavaScript 的语言弊端就会愈发明显。</p>
+                                <p class="">而 TypeScript 的出现，就是着力于解决 JavaScript 语言天生的弱势：静态类型。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">TypeScript</i><i
+                                    class="saidfont icon-yonghu">19096</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2017年08月</span></div>
+                    <article class="item">
+                        <div class="date"><span>29日</span><small>18:05</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">有了 indexOf，为什么 ECMAScript 7 还添加了
+                                    Array.prototype.includes</a></h2>
+                            <div class="summary">
+                                <p class="">最近又看了下 ECMAScript 7 规范，看到新的规范中包含了 Array.prototype.includes()，用于检测数组中是否包含某个元素
+                                </p>
+                                <p class="">想到了 Array 其实有很多相关 API 可以检测到是否包含某个元素</p>
+                                <p class="">于是好奇为什么要实现这样一个 "看起来功能有点重复的 API"</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">JavaScript</i><i
+                                    class="saidfont icon-yonghu">6782</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2017年05月</span></div>
+                    <article class="item">
+                        <div class="date"><span>20日</span><small>01:12</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">产品象限</a></h2>
+                            <div class="summary">
+                                <p class="">一个健康的产品生命周期是从问号类开始，转化为明星类，然后成为金牛类带来巨大的收益回报，最终产品成为瘦狗。</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">said</i><i
+                                    class="saidfont icon-yonghu">5506</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2016年10月</span></div>
+                    <article class="item">
+                        <div class="date"><span>06日</span><small>04:51</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章" href="blog-detail.html">从
+                                    HTTP 到 HTTPS - 网站部署 HTTPS 中需要做的事情</a></h2>
+                            <div class="summary">
+                                <p class="">web 发展迅猛</p>
+                                <p class="">技术日新月异层出不穷</p>
+                                <p class="">web 的安全性同样是一场持久的攻防战</p>
+                                <p class="">而 HTTPS 的普及</p>
+                                <p class="">为 web 通信构建了更加良好和安全的根基</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">HTTPS</i><i
+                                    class="saidfont icon-yonghu">10265</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>05日</span><small>02:49</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章" href="blog-detail.html">从
+                                    HTTP 到 HTTPS - IIS 部署免费 HTTPS</a></h2>
+                            <div class="summary">
+                                <p class="">这篇文章主要讲述 IIS 8 部署免费 HTTPS</p>
+                                <p class="">HTTPS是互联网 web 大势所趋</p>
+                                <p class="">TaSaid 最近把机房从香港迁移到青岛</p>
+                                <p class="">趁着这次机会</p>
+                                <p class="">观望并折腾了几天</p>
+                                <p class="">在迁移中顺便完成了 HTTPS 的部署</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">HTTPS</i><i
+                                    class="saidfont icon-yonghu">19536</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>03日</span><small>00:11</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章" href="blog-detail.html">从
+                                    HTTP 到 HTTPS - 什么是 HTTPS</a></h2>
+                            <div class="summary">
+                                <p class="">HTTPS是互联网大势所趋</p>
+                                <p class="">各大网站都已陆续部署了 HTTPS</p>
+                                <p class="">Said 近期也迁移到了 HTTPS</p>
+                                <p class="">这篇文章我们来探讨什么是 HTTPS 以及为什么要部署 HTTPS</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">HTTPS</i><i
+                                    class="saidfont icon-yonghu">15042</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>01日</span><small>00:42</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">co.js - 让异步代码同步化</a></h2>
+                            <div class="summary">
+                                <p class="">对于异步代码来说，回调函数是最基础的方案，带来的弊端也显而易见</p>
+                                <p class="">Promise 让代码扁平化，而 co 让代码同步化</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">JavaScript</i><i
+                                    class="saidfont icon-yonghu">5901</i></div>
+                        </div>
+                    </article>
+                    <div class="timespan"><span class="txt">2016年09月</span></div>
+                    <article class="item">
+                        <div class="date"><span>07日</span><small>17:09</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">JavaScript 下的 setTimeout(fn, 0) 意味着什么？</a></h2>
+                            <div class="summary">
+                                <p class="">近期在研究异步编程的我对于 setTimeout 之类的东西异常敏感</p>
+                                <p class="">有人读到一篇文章，解释 setTimeout 延迟时间为 0 时会发生的事情，然后提出了几个文章的疑点</p>
+                                <p class="">读了那篇文章之后发现原文的作者对于 setTimeout 的理解和自己的认知有点出入</p>
+                                <p class="">于是编写了相关测试的代码以求答案</p>
+                                <p class="">最终编写了这篇文章</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">JavaScript</i><i
+                                    class="saidfont icon-yonghu">2996</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>07日</span><small>16:27</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">JavaScript - 如果...没有方法</a></h2>
+                            <div class="summary">
+                                <p class="">如果js没有原生方法 Math.round() , 我们如何去实现呢 ?</p>
+                                <p class="">有哪些脑洞大开的代码去实现呢？</p>
+                                <p class="">看了这些代码也许你也会和我一样</p>
+                                <p class="">有种回家找家影楼给别人撒撒花，扬扬裙摆，送送快递的想法</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">JavaScript</i><i
+                                    class="saidfont icon-yonghu">2116</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>06日</span><small>23:13</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">Said 转载授权说明</a></h2>
+                            <div class="summary">
+                                <p class="">本站内容：</p>
+                                <p class="">引流转载无需联系作者</p>
+                                <p class="">全文转载需要联系作者授权</p>
+                                <p class="">已授权的网站无需联系作者即可按照作者的授权转载</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">said</i><i
+                                    class="saidfont icon-yonghu">79905</i></div>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <div class="date"><span>06日</span><small>22:22</small></div>
+                        <div class="content">
+                            <h2 class="title ellipsis"><a class="link" title="点击查看文章"
+                                    href="blog-detail.html">Said 更新日志</a></h2>
+                            <div class="summary">
+                                <p class="">这篇博客用于记录 Said 重要的更新日志</p>
+                            </div>
+                            <div class="footer"><i class="saidfont icon-category">said</i><i
+                                    class="saidfont icon-yonghu">2082</i></div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+    </div>
+
+    <footer id="footer">
+        <section class="content">
+            <div class="footer-item friends">
+                <div class="title">推荐</div>
+                <div><a class="link" href="/link?url=https%3A%2F%2Ftslang.cn%2F" target="_blank">TypeScript 中文网</a>
+                </div>
+                <div><a class="link"
+                        href="/link?url=%2F%2Fshang.qq.com%2Fwpa%2Fqunwpa%3Fidkey%3De42d074293d1ec3d6fd5ca632323494193f2ccb1f51e7b545ca413d627895b7d"
+                        target="_blank">QQ 群：377786580</a></div>
+            </div>
+            <div class="footer-item">
+                <div class="title">许可</div>
+                <p>本站原创并且没有注明相关许可协议的内容，默认请参考<a class="link" href="/blog/2018030702145515.html" target="_blank">《Said
+                        转载授权说明》</a>进行许可。非原创内容遵循原文许可协议</p>
+            </div>
+            <div class="footer-item">
+                <div class="title">联系方式</div>
+                <p>内容基本都是自己原创的，引用的地方都会给出相关引用，如有疏漏，联系方式：linkFly6<i class="saidfont icon-at"></i>live.com</p>
+            </div>
+        </section>
+        <div class="copyright">©2019 Said:听说 - linkFly - <a class="link"
+                href="/link?url=http%3A%2F%2Fwww.miitbeian.gov.cn%2F" target="_blank">皖ICP备 16018864 号</a></div>
+    </footer>
+</body>
+
+</html>

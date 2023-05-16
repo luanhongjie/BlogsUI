@@ -6,473 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blogs</title>
-
-    <style>
-        *::selection {
-            background: none repeat scroll 0 0 #ea4c89;
-            color: rgba(255, 255, 255, 0.85);
-        }
-
-        *,
-        *:before,
-        *:after {
-            box-sizing: border-box;
-        }
-
-        html {
-            line-height: 1.15;
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        html,
-        body,
-        button,
-        input,
-        select,
-        textarea {
-            font: 14px/24px -apple-system, BlinkMacSystemFont, STHeiti, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft Yahei", sans-serif;
-            font-feature-settings: "liga", "kern";
-            text-rendering: optimizelegibility;
-            -webkit-font-smoothing: antialiased;
-            color: #41485d;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        .container {
-            position: relative;
-            z-index: 3;
-            background: #fff;
-        }
-
-        article,
-        aside,
-        footer,
-        header,
-        nav,
-        section {
-            display: block;
-        }
-
-        a {
-            color: #4078c0;
-            text-decoration: none;
-            transition: color .2s ease-in-out 0s;
-            outline: none;
-        }
-
-        a:hover{
-            color: #59c6ff !important;
-        }
-
-        #header {
-            padding: 10px 0 15px 0;
-            width: 980px;
-            margin: 0 auto;
-            overflow: hidden;
-            justify-content: space-between;
-        }
-
-        nav,
-        section {
-            display: block;
-        }
-
-        #header #nav-logo {
-            float: left;
-        }
-
-        #header #nav-logo .logo {
-            display: block;
-            margin: 0 auto;
-            width: 9.38rem;
-            height: 3.4rem;
-            background-position: center;
-            background: url(logo.png) no-repeat;
-        }
-
-        #header #nav {
-            float: right;
-            position: relative;
-            z-index: 1;
-        }
-
-        #header #nav #nav-menu {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        #header #nav #nav-menu li {
-            float: left;
-        }
-
-        #header #nav #nav-menu li a {
-            display: block;
-            width: 4.4rem;
-            text-align: center;
-            line-height: 3.4rem;
-            color: #606060;
-            
-        }
-
-        #header #nav #nav-menu li.nav-active a {
-            color: #59c6ff !important;
-        }
-
-        a:hover {
-            transition: color .2s ease-in-out 0s;
-        }
-
-        #header #nav .line {
-            width: 4.4rem;
-            border-bottom: 1px solid #33b5e5;
-            position: absolute;
-            bottom: 0;
-            z-index: 5;
-            transition: all .2s ease-in-out 0s;
-        }
-
-
-
-        .container .banner-bg {
-            overflow: hidden;
-            width: 100%;
-            height: 43.8rem;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .container .banner-bg .banner {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        .container .banner-bg .banner .banner-item {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-            text-align: center;
-            background-position: center bottom;
-            background-size: 2110px 800px;
-            z-index: 1;
-        }
-
-        .container .banner-bg .banner .banner-item .banner-content {
-            margin: 0 auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: .5rem 0 1rem;
-            text-align: center;
-            width: 960px;
-            max-height: 380px;
-            background: url(focus_bg.png) 100%;
-        }
-
-        .container .banner-bg .banner .banner-item.white .banner-content .title,
-        .container .banner-bg .banner .banner-item.white .banner-content .context {
-            color: #fff;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-        }
-
-        .container .banner-bg .banner .banner-item .banner-content .title {
-            margin: 0;
-            font-size: 2.2rem;
-            line-height: 5rem;
-            font-weight: normal;
-        }
-
-        .container .banner-bg .banner .banner-item .banner-content .context p {
-            margin: 0;
-            font-size: 1.2rem;
-            line-height: 2rem;
-        }
-
-
-        #content {
-            padding: 40px 0;
-            margin-bottom: 371px;
-        }
-
-        article,
-        aside,
-        footer,
-        header,
-        nav,
-        section {
-            display: block;
-        }
-
-        #content .said-content {
-            min-width: 1000px;
-            max-width: 1600px;
-            margin: 0 auto;
-        }
-
-        .said-module:first-child {
-            padding-top: 1.6rem;
-        }
-
-        .said-module {
-            padding: 5rem 0 0;
-        }
-
-        .said-module .head {
-            text-align: center;
-            padding: .8rem;
-        }
-
-        .said-module .head h1 {
-            font-size: 2.2rem;
-            font-weight: 200;
-            letter-spacing: .3rem;
-            line-height: 2.2rem;
-            margin: 0;
-        }
-
-        .said-module .head p {
-            font-size: 1.2rem;
-            line-height: 2rem;
-            padding: .8rem;
-            margin: 0;
-        }
-
-        .said-module .head p i {
-            color: #777;
-            padding: 0 .8rem;
-        }
-
-        .saidfont {
-            font-size: 1rem;
-            font-family: "saidfont" !important;
-            font-style: normal;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .icon-quotes-left:before {
-            content: "\e63c";
-        }
-
-        .icon-quotes-right:before {
-            content: "\e63a";
-        }
-
-        .said-module .head .link {
-            font-size: 1rem;
-            color: #4078c0;
-        }
-
-        .link::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            display: block;
-            bottom: -5px;
-            width: 100%;
-            height: 1px;
-            background-color: currentColor;
-            transform: scale(0);
-            transition: transform .5s;
-        }
-
-        .said-module .content {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .said-module .content .item {
-            padding: 1.1rem 1.6rem .8rem;
-            width: 33.3333%;
-            float: left;
-            position: relative;
-        }
-
-        .item.said-item .main {
-            width: 100%;
-            position: relative;
-            height: 280px;
-            background-size: 547px 300px;
-            background-position: 50% 0;
-            background-repeat: no-repeat;
-        }
-
-        .said-module .content .item.said-item .main .mask {
-            background: linear-gradient(rgba(61, 61, 61, 0.9), rgba(20, 40, 50, 0.9)) repeat scroll 0 0 #222;
-            position: absolute;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            opacity: 0;
-            transition: opacity .3s ease-in-out 0s;
-        }
-
-        .said-module .content .item.said-item .main .mask .summary {
-            color: #fff;
-            text-align: justify;
-            padding: 10px;
-            text-indent: 2em;
-            width: 100%;
-            margin: auto;
-        }
-
-        .said-module .content .item.said-item .main .mask .summary p {
-            margin: 0;
-        }
-
-        .said-module .content .item h2 {
-            margin: 0;
-            font-weight: 200;
-            line-height: 2;
-        }
-
-        .said-module .content .item.said-item .detail .date {
-            color: #999;
-            display: block;
-            text-align: center;
-        }
-
-        .said-module .content .item.said-item .detail a {
-            display: block;
-            text-align: center;
-            color: #444;
-            line-height: 2;
-            font-size: 1.56rem;
-        }
-
-        .clear-fix::after {
-            clear: both;
-            float: none !important;
-            content: '';
-            display: block;
-        }
-
-
-        .said-module .content .item.blog-item .footer {
-            padding-bottom: 3px;
-            color: #999;
-            overflow: hidden;
-        }
-
-        .saidfont {
-            font-size: 1rem;
-        }
-
-        .said-module .content .item.blog-item .footer i::before {
-            margin-right: .2rem;
-        }
-
-        .said-module .content .item.blog-item .footer i:not(:first-child) {
-            padding-left: .5rem;
-        }
-
-
-
-        .said-module .content .item.blog-item .footer i::before {
-            margin-right: .2rem;
-        }
-
-        .said-module .content .item.blog-item .footer span {
-            float: right;
-        }
-
-        .said-module .content {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-
-        .ellipsis {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-
-        .link {
-            position: relative;
-        }
-
-        .said-module .content .item.blog-item .summary {
-            color: #777;
-            text-align: justify;
-            height: 100px;
-            overflow: hidden;
-        }
-
-        .said-module .content .item.blog-item .summary p {
-            margin: 0;
-        }
-
-        #footer {
-            overflow: hidden;
-            position: fixed;
-            z-index: 2;
-            height: 371px;
-            background: none repeat scroll 0 0 #292929;
-            bottom: 0;
-            left: 0;
-            display: block;
-            padding: 2rem 0;
-            width: 100%;
-            color: #f1f1f1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        #footer .content {
-            flex: 1;
-            display: flex;
-            justify-content: space-between;
-            width: 980px;
-            font-size: 1rem;
-            line-height: 1.8rem;
-            margin: 0 auto;
-        }
-
-        #footer .content .footer-item:first-child {
-            margin-left: 0;
-        }
-
-        #footer .content .footer-item {
-            flex: 1;
-            margin: 0 1rem;
-        }
-
-        #footer .content .footer-item .title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            line-height: 3rem;
-        }
-
-        #footer a {
-            color: #ccc;
-        }
-
-        #footer .copyright {
-            width: 980px;
-            margin: 0 auto;
-            color: #a3a2a2;
-        }
-    </style>
-
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -488,10 +22,10 @@
                         <a href="/">首页</a>
                     </li>
                     <li>
-                        <a href="/blog">blog</a>
+                        <a href="./blog.html">blog</a>
                     </li>
                     <li>
-                        <a href="/said">听说</a>
+                        <a href="said.html">听说</a>
                     </li>
                     <li>
                         <a href="/about">关于</a>
@@ -503,7 +37,7 @@
 
         <div class="banner-bg">
             <ul class="banner">
-                <li class="banner-item white" style="background-image:url(said-bg1.jpg)">
+                <li class="banner-item white" style="background-image:url(./img/said-bg1.jpg)">
                     <div class="banner-content">
                         <h3 class="title">世界很大，风住过这里</h3>
                         <div class="context">
@@ -533,7 +67,7 @@
 
                     <ul class="content clear-fix">
                         <li class="item said-item">
-                            <div class="main" style="background-image:url(item1.jpg)">
+                            <div class="main" style="background-image:url(./img/item1.jpg)">
                                 <div class="mask">
                                     <div class="summary">
                                         <p class="">人这一生大约会遇到 80000 人</p>
@@ -546,14 +80,14 @@
 
                             <div class="detail">
                                 <h2>
-                                    <a class="ellipsis" title="远方的再见" href="/said/2018112015474064.html">远方的再见</a>
+                                    <a class="ellipsis" title="远方的再见" href="./detail.html">远方的再见</a>
                                 </h2>
                                 <time class="date">2018-11-20 15:47</time>
                             </div>
                         </li>
 
                         <li class="item said-item">
-                            <div class="main" style="background-image:url(item2.jpg)">
+                            <div class="main" style="background-image:url(./img/item2.jpg)">
                                 <div class="mask">
                                     <div class="summary">
                                         <p class="">于是有事发生让你醒来，不是吗？是梦还是别的？</p>
@@ -566,13 +100,13 @@
                                 </div>
                             </div>
                             <div class="detail">
-                                <h2><a class="ellipsis" title="羔羊在号叫" href="/said/2018090421302059.html">羔羊在号叫</a></h2>
+                                <h2><a class="ellipsis" title="羔羊在号叫" href="./detail.html">羔羊在号叫</a></h2>
                                 <time class="date">2018-09-04 21:30</time>
                             </div>
                         </li>
 
                         <li class="item said-item">
-                            <div class="main" style="background-image:url(item3.jpg)">
+                            <div class="main" style="background-image:url(./img/item3.jpg)">
                                 <div class="mask">
                                     <div class="summary">
                                         <p class="">当你听说曾经与你立下海誓山盟的女孩成了两个孩子的母亲</p>
@@ -582,7 +116,7 @@
                                 </div>
                             </div>
                             <div class="detail">
-                                <h2><a class="ellipsis" title="有一天与某一天" href="/said/2018062113320757.html">有一天与某一天</a>
+                                <h2><a class="ellipsis" title="有一天与某一天" href="./detail.html">有一天与某一天</a>
                                 </h2><time class="date">2018-06-21 13:32</time>
                             </div>
                         </li>
@@ -596,12 +130,12 @@
                             泡上Java，我们用舒服的方式聊聊技术
                             <i class="saidfont icon-baojiaquotation"></i>
                         </p>
-                        <a class="link" href="/blog">更多精彩技术文章</a>
+                        <a class="link" href="./blog.html">更多精彩技术文章</a>
                     </div>
 
                     <ul class="content clear-fix">
                         <li class="item blog-item">
-                            <h2 class="ellipsis"><a class="link" href="/blog/2019022017450863.html">TypeScript 中的多种
+                            <h2 class="ellipsis"><a class="link" href="blog-detail.html">TypeScript 中的多种
                                     import
                                     解义</a></h2>
                             <div class="summary">
@@ -615,7 +149,7 @@
                                     17:45</span></div>
                         </li>
                         <li class="item blog-item">
-                            <h2 class="ellipsis"><a class="link" href="/blog/2018122819513079.html">使用 TypeScript
+                            <h2 class="ellipsis"><a class="link" href="blog-detail.html">使用 TypeScript
                                     编写一个完善包含测试、文档和持续集成的库</a></h2>
                             <div class="summary">
                                 <p class="">这篇文章主要是讲述如何使用 TypeScript 编写一个完善，包含测试、文档、持续集成的库，涵盖了编写整个库所需要的技术和工具。</p>
@@ -625,7 +159,7 @@
                                     19:51</span></div>
                         </li>
                         <li class="item blog-item">
-                            <h2 class="ellipsis"><a class="link" href="/blog/2018090320413666.html">Web 前端解决方案指南 -
+                            <h2 class="ellipsis"><a class="link" href="blog-detail.html">Web 前端解决方案指南 -
                                     社区的演变</a></h2>
                             <div class="summary">
                                 <p class="">今日的 web 和几年前的 web 已经演变了很多，多变而又复杂</p>

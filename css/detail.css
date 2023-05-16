@@ -1,0 +1,270 @@
+#content .content-bg .content-bg-img {
+    width: 100%;
+    height: 680px;
+    position: relative;
+    animation: 20s linear 0s normal none infinite banner-anima;
+    left: 0;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#content .said-content {
+    position: relative;
+    z-index: 2;
+}
+
+#content .said-content {
+    min-width: 1000px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+#content .music {
+    width: 825px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 1rem;
+}
+
+#content .music .img {
+    border: 1px solid #fff;
+}
+#content .music .img img {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+#content .music .music-info {
+    flex: 1;
+    list-style: none;
+    padding: 0 1rem;
+    border-right: 1px solid #fcfcfc;
+}
+
+#content .music .music-info li.name {
+    font-size: 1.6rem;
+}
+
+.link {
+    position: relative;
+}
+a {
+    color: #4078c0;
+    text-decoration: none;
+    transition: color .2s ease-in-out 0s;
+    outline: none;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+#content .music .music-player {
+    position: relative;
+    height: 80px;
+    padding: 1rem 0 1rem 1rem;
+}
+
+#content .music .music-player .palyer-button {
+    cursor: pointer;
+    float: left;
+    margin-right: 0.8rem;
+    color: #777;
+}
+
+#content .music .music-player .palyer-button i {
+    font-size: 2rem;
+}
+
+.saidfont {
+    font-family: "saidfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-stop_icon:before {
+    content: "\e718";
+}
+
+
+#content .music .music-player .player-progress {
+    position: relative;
+    top: 0.66rem;
+    width: 200px;
+    height: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #ededed;
+    float: right;
+}
+
+
+#content .music .music-player .time {
+    position: absolute;
+    bottom: 3.9rem;
+    right: 0;
+}
+
+#content .music .music-player .player-volume {
+    width: 0;
+    height: 100%;
+    background: #9cf;
+}
+
+
+
+/**/
+#content .said-content >.context.said {
+    padding: 2rem 2rem;
+    background-image: linear-gradient(to bottom,#f6f6f1 0%,#fff 50%);
+}
+
+#content .said-content >.context {
+    width: 825px;
+    margin: 0 auto;
+}
+
+#content .said-content >.context .title {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 0 0 1rem 0;
+    margin: 0 0 1rem 0;
+    font-size: 2.1rem;
+    border-bottom: 1px dashed #ccc;
+    color: #666;
+}
+
+#content .said-content >.context .article .html {
+    font: 16px/2 system,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",SimSun,sans-serif;
+}
+
+#content .said-content >.context .article .html blockquote {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#content .said-content >.context .article .html blockquote {
+    padding: 1em;
+    margin: 1em 0;
+    color: #777;
+    background-color: #f8f8f8;
+    border-left: 4px solid #56a1d6;
+}
+
+#content .said-content >.context .article .html blockquote ul, #content .said-content >.context .article .html blockquote ol, #content .said-content >.context .article .html blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+#content .said-content >.context.said .html p {
+    letter-spacing: 1px;
+}
+
+#content .said-content >.context .article .html p {
+    text-align: justify;
+    margin: 0;
+    word-break: break-word;
+}
+
+#content .said-content >.context .article .html p, #content .said-content >.context .article .html ul, #content .said-content >.context .article .html ol, #content .said-content >.context .article .html dl, #content .said-content >.context .article .html table, #content .said-content >.context .article .html pre, #content .said-content >.context .article .html blockquote {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+#content .said-content >.context .article .author {
+    padding-top: 3rem;
+    font-size: 1.142rem;
+}
+
+#content .said-content >.context.said .article-other-info {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+#content .said-content >.context .article-other-info time {
+    position: relative;
+    top: 0.3rem;
+    float: right;
+    margin-left: 1rem;
+    line-height: 1.2;
+    background: #999;
+    border-radius: 1.285rem;
+    color: #fff;
+    font-size: .928rem;
+    padding: 0.2rem 0.85rem;
+}
+
+#content .said-content >.context .article-other-info .browse {
+    position: relative;
+    top: 0.3rem;
+    float: right;
+}
+
+.saidfont {
+    font-size: 1rem;
+}
+
+.saidfont {
+    font-family: "saidfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yonghu:before {
+    content: "\e796";
+}
+
+#content .said-content >.context .article-other-info::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#content .said-content >.context .more .other {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#content .said-content >.context .more .other .like {
+    padding: 1rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1.185rem;
+}
+
+#content .said-content >.context .more .other .like span:first-child {
+    position: relative;
+    padding-right: 0.5rem;
+}
+
+#content .said-content >.context .more .other .like span:first-child:after {
+    position: absolute;
+    content: '|';
+    right: -0.5rem;
+    display: inline;
+    color: rgba(255,255,255,0.2);
+}
+
+#content .said-content >.context .more .other .like span:last-child {
+    padding-left: 1rem;
+}

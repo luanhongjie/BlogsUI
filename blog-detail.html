@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文章详情</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blog-detail.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div id="nav-logo">
+                <a class="logo" title="听说" href="/"></a>
+            </div>
+            <nav id="nav">
+                <ul id="nav-menu">
+                    <li>
+                        <a href="/">首页</a>
+                    </li>
+                    <li  class="nav-active">
+                        <a href="./blog.html">blog</a>
+                    </li>
+                    <li>
+                        <a href="said.html">听说</a>
+                    </li>
+                    <li>
+                        <a href="/about">关于</a>
+                    </li>
+                </ul>
+                <span class="line" id="nav-line" style="left: 60px;"></span>
+            </nav>
+        </header>
+
+        <div class="banner-bg">
+            <ul class="banner">
+                <li class="banner-item white" style="background-image:url(./img/blog-banner.jpg)">
+                    <div class="banner-content">
+                        <h3 class="title">Write the code, change the world</h3>
+                        <div class="context">
+                            <p>
+                                任何可以使用 JavaScript 实现的应用，都应该使用 TypeScript 来实现</p>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <section id="content">
+            <div class="said-content">
+                <section class="context blog" id="article-context">
+                    <h1 class="title">Web 前端解决方案指南 - 社区的演变</h1>
+                    <article class="article">
+                        <section class="notice warning">文章最后一次更新于 2018-09-03 20:41，技术更迭频繁，请注意相关技术是否已经更新</section>
+                        <section class="html">
+                            <p>今日的 web 和几年前的 web 已经演变了很多，多变而又复杂。从过去传统局限在前后一体，逐渐进化到今天技术繁多，一直延伸到 webapp，SSR 甚至发展到客户端。</p>
+                            <p><img src="img/blog-detail-1.png" alt="alt"></p>
+                            <blockquote>
+                                <p>555555555555555555666666666666666666666666666</p>
+                            </blockquote>
+                            <h2 id="man-huang-shi-dai"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#man-huang-shi-dai" name="man-huang-shi-dai"></a><span>蛮荒时代</span></h2>
+                            <p>早在几年我刚入行的时候，jQuery 风头正盛 —— “你可以不会 JavaScript，但你必须要会 jQuery”。那个时候 AMD 和 CMD
+                                模块规范在社区里摩擦着火花。那时候没有 web 前后端分离的概念，前端的代码依附在后端项目中。</p>
+                            <pre class="hljs lang-bash"><code class="bash">.
+                ├── release
+                ├── src         <span class="hljs-comment"># 后端相关</span>
+                │   ├── main
+                │   ├── java
+                │   │    ├── com
+                │   ├── resources
+                ├── bin
+                ├── WebRoot     <span class="hljs-comment"># 前端相关</span>
+                │   ├── css
+                │   ├── images
+                │   ├── js
+                │   ├── META-INF
+                │   ├── WEB-INF
+                │   │    ├── lib
+                │   └── index.jsp</code></pre>
+                            <p>过去项目里前端资源依附下后端项目下，这么设计是因为当初前端远没有今天这么复杂，属于项目中的一小部分，所以依附下传统业务项目上。当时在大型 web
+                                架构中（前后端），微服务、模块分离、业务分离的概念还没有今天这般清晰。</p>
+                            <p>另外就是那时候的大部分都是后端工程师也包揽了前端的事情，所以放在传统后端项目中理所当然。web 前端工程师也只是近几年才有的岗位。</p>
+                            <p>如此带来的劣势也很明显，就是前端很依赖后端项目，在今天看来，让一个前端选手打开后端项目，并且从头到尾撸一遍逻辑。尤其再配合后端 web 框架情侣搭配的 JSP/Razor/ASP
+                                .NET 服务端渲染，酸爽的气息扑面而来。</p>
+                            <p>这些前后端混在一起的状态十分痛苦，整个社区迫切需要一种解决方案，而 Nodejs 的兴起，使得这些无处安放的解决方案有了一个最佳平台。</p>
+                            <h2 id="she-qu-de-yan-bian"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#she-qu-de-yan-bian" name="she-qu-de-yan-bian"></a><span>社区的演变</span></h2>
+                            <p>Node 横空出世，带来了属于 web 前端的生态圈的朝阳。它主要带来了两个革命性的东西：</p>
+                            <ul>
+                                <li>npm 包管理</li>
+                                <li>一个脱离了浏览器的运行环境</li>
+                            </ul>
+                            <h3 id="npm"><a class="saidfont icon-yinyong hash" aria-hidden="true" href="#npm"
+                                    name="npm"></a><span>npm</span></h3>
+                            <p>当 Brendan Eich 仅花了 10 天开发 JavaScript 的时候，并没有考虑到它会发展到今天这样壮大 —— JavaScript 缺少良好的包管理方案。</p>
+                            <p><img src="/img/blog-detail-2.png" alt="alt"></p>
+                            <p>nodejs 带来了 <code>npm</code> 包管理，那些无处安放的工具类库终于有了一个平台，大家纷纷将自己封装的工具、库放到 npm
+                                上，然后其他人也可以引入这个包，生态由此建立。而因为 npm 的设计缺陷加上社区的活跃。</p>
+                            <p>当然，npm 上包的质量和数量逐渐形成一种新的历史包袱，例如 2016 年在 npm 上发生的 <a
+                                    href="#"
+                                    title="" target="_blank">left-pad 事件</a> 也给了 npm 社区一个新的警示。</p>
+                            <p>在现代 web 应用中，应该根据项目的需要，优先利用起 npm 作为包管理方案，结合优秀的模块管理方案，抛弃过去 引入 <code>&lt;script /&gt;</code>
+                                引入包的方式。</p>
+                            <h3 id="bai-hua-qi-fang-de-bian-yi-gong-ju"><a class="saidfont icon-yinyong hash"
+                                    aria-hidden="true" href="#bai-hua-qi-fang-de-bian-yi-gong-ju"
+                                    name="bai-hua-qi-fang-de-bian-yi-gong-ju"></a><span>百花齐放的编译工具</span></h3>
+                            <p>随着 Nodejs 的到来，Nodejs 是基于 Chrome V8 引擎打造的一个 JavaScript 运行环境，可以让 js 不再局限于浏览器中。</p>
+                            <p>而 JavaScript 的规范 ECMAScript 也配合时代的发展迎来快速更新。我们有了新的需求：</p>
+                            <ul>
+                                <li>更新的语言规范编写的代码，需要运行在各种老旧的浏览器上（通过 <code>babel</code> 等）</li>
+                                <li>增强现有技术的新技术（例如 <code>React JSX/TypeScript</code>）</li>
+                            </ul>
+                            <p>于是前端也走上了其他大型语言的老路 —— 编译。</p>
+                            <p>正是 Nodejs 提供了强大平台的，让编译工具开始百花齐放，webpack、rollup、parceljs、gulp、grunt 等编译工具逐渐流行，“配置工程师”
+                                这个耐人寻味的名词逐渐活跃在前端圈。</p>
+                            <p>真怀念过去写个 js 然后 <code>&lt;script /&gt;</code> 引入的简单日子...</p>
+                            <p><img src="./img/blog-detail-3.jpeg" alt="alt"></p>
+                            <h3 id="node-web-server"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#node-web-server" name="node-web-server"></a><span>node web server</span></h3>
+                            <p>Nodejs 拔高整个行业的水平是无疑的，随着 Nodejs 的热门，以 Nodejs 为后端的主力军逐渐开始出现，“nodejs 工程师”
+                                的字眼也开始出现在岗位招聘当中。Nodejs 可以是编译工具的平台，也可以是 node web server —— 一个完善的后端服务。</p>
+                            <p>以 express 和 koa 为核心的 web server，配合数据库的操作，让前端产生了更多的想象力。</p>
+                            <p><img src="img/blog-detail-4.png" alt="alt"></p>
+                            <p>Nodejs web server 的出现让前端的技术范围延伸到了后端，从 client 一路 “编写 JavaScript” 到 server。</p>
+                            <p>在现代 web 前端架构中，Nodejs
+                                扮演着重要的角色，它可以在编译阶段为编译工具提供平台，在此之上继而编写自己的自动化工具。也可以在前后端分离的场景中，建立一个中间服务，编写前后端的胶水。</p>
+                            <p>更可以独立成为 web server，连接整个前后端。</p>
+                            <h3 id="electron"><a class="saidfont icon-yinyong hash" aria-hidden="true" href="#electron"
+                                    name="electron"></a><span>electron</span></h3>
+                            <p>前端社区的壮大充满了想象力，有耀眼的巨星 <code>React-Native</code> 试着将 web 的技术融入到移动端 native，也有部分人将 web
+                                前端的技术延伸到了传统的桌面端 —— <a href="//tasaid.com/link?url=https%3A%2F%2Felectronjs.org%2F"
+                                    title="" target="_blank">Electron</a> 由此而生。</p>
+                            <p>Electron 基于 Chromium 和 Node.js, 让你可以使用 HTML, CSS 和 JavaScript 构建桌面应用程序。</p>
+                            <p><img src="img/blog-detail-5.png" alt="alt"></p>
+                            <blockquote>
+                                <p>如果你可以建一个网站，你就可以建一个桌面应用程序。 Electron 是一个使用 JavaScript, HTML 和 CSS 等 Web
+                                    技术创建原生程序的框架，它负责比较难搞的部分，你只需把精力放在你的应用的核心上即可。</p>
+                            </blockquote>
+                            <p>Electron 具有跨平台的特性，和 Web 相关技术融合，以及简单精致的 API 设计。</p>
+                            <p><img src="img/blog-detail-6.png" alt="alt"></p>
+                            <blockquote>
+                                <p>Any application that can be written in JavaScript, willeventually be written in
+                                    JavaScript.
+                                    任何可以使用 JavaScript 编写的程序，最终都会使用 JavaScript 编写
+                                    —— Jeff Atwood</p>
+                            </blockquote>
+                            <h2 id="jie-jue-fang-an"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#jie-jue-fang-an" name="jie-jue-fang-an"></a><span>解决方案</span></h2>
+                            <p>前面讲解了很多关于 web 前端的历史，是希望所有人都可以意识到，前端发展到了今天，已经不是简单 HTML/css/js
+                                就可以概括的东西，它的应用场景也越来越丰富，项目复杂程序今非昔比，而如何保证一个长期可维护的项目本身就需要一些思考加以提炼精华。</p>
+                            <p>理想的解决方案，首当其冲，应该有一套迎合当前环境的架构方案。</p>
+                            <p>架构是一套将现有技术归并，并打出组合拳，融入了设计思想，也以一套规范形成整个项目风格的骨架。 </p>
+                            <p>架构的是规范的基础，也是规范的壁垒，同样它也是规范的最后一道防线。</p>
+                            <p>在架构一个项目的时候，应该考虑优先以下几个特性：可维护性，可扩展性，规范化约束和风格。</p>
+                            <p>顺便我们可以提一下现在前端圈的脚手架。脚手架脚手架模板本质上也是架构，一种通用，结合了最佳实践的架构。</p>
+                            <p>脚手架致力于最佳实践，并留出足够的可扩展性，以便基于业务型架构，延伸出迎合业务的最佳实践。</p>
+                            <p>当然，解决方案包含了架构、设计思想、编码规范、工程化和基础工具设施等，甚至与部署方式都有关的。架构只是其中相对比较重要的一个环节而已。</p>
+                            <p>在良好的解决方案中，应该包含几个关键点：</p>
+                            <h3 id="ke-wei-hu-xing"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#ke-wei-hu-xing" name="ke-wei-hu-xing"></a><span>可维护性</span></h3>
+                            <p>优先保证可维护性，这是我们追求良好解决方案的核心。不能项目完成后，在业务没有大幅度调动的情况下，项目支撑不到半年就变的难以维护或不可维护，随着时间推进技术债会积累的越来越深。
+                            </p>
+                            <p>从立项开始，目录结构，文件名，甚至构建方式都影响着后续的项目可维护性，所以在项目立项之初的每一步都必须经过深思熟虑。</p>
+                            <p>例如下面的目录结构就没有考虑到 <code>components</code> 和 <code>module</code> 的区别，数据如何流向，逻辑放哪里等问题。</p>
+                            <pre class="hljs lang-shell"><code class="shell">src
+                ├── app
+                │   ├── main.js
+                ├── assets
+                │   ├── config
+                │   ├── fonts
+                │   ├── imgs
+                │   ├── libs
+                │   └── tools
+                ├── components
+                │   ├── common
+                │   └── partial
+                └── index.html</code></pre>
+                            <p>项目可维护性是一个值得严阵以待的问题。</p>
+                            <h3 id="ke-kuo-zhan-xing"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#ke-kuo-zhan-xing" name="ke-kuo-zhan-xing"></a><span>可扩展性</span></h3>
+                            <p>在项目架构方面，需要具有可扩展性。在真实的业务场景中，被产品方向、产品需求、技术氛围、公司工具等环境影响的因素非常多，保持架构的可扩展性同样非常重要。</p>
+                            <p>但是每次扩展不应该是随便找个地方写个目录就可以了，久而久之会因为被随意扩展，再次导致项目可维护性越来越低，所以可扩展性是相对的，在现有的架构上可以平滑、可控的扩展，而不应该被随意扩展。
+                            </p>
+                            <p>很多项目就有这种情况，刚开始的目录规范定的很好，随着需求的变多随意扩展目录，越到后来目录越来越多，每个目录都概念模糊。</p>
+                            <p>对于这个问题的解决，个人崇尚的方案是 code review，约定和规范永远没有良好的 code review 来的粗暴且有效。同样 code review
+                                能够在及时发现问题，在可控的时间内把控好整个项目的规范和约束。</p>
+                            <p>其次，可扩展考虑不仅仅只是目录，代码、业务、甚至服务器集群，都要保留可扩展性。</p>
+                            <p>在代码层面，需要保留统一的入口和出口处理。</p>
+                            <ul>
+                                <li>统一管理的 HTTP 请求方法，统一的 HTTP 结果处理</li>
+                                <li>统一管理的逻辑层入口</li>
+                                <li>统一管理的数据流向</li>
+                                <li>统一管理的状态管理（例如用户状态机）</li>
+                                <li>统一管理的 BaseComponents/BasePage</li>
+                                <li>统一管理的 BaseModel</li>
+                            </ul>
+                            <p>做这些统一为了为了后续可以在统一的入口处做扩展，例如 HTTP 所有请求都要加一个参数贯穿全局的参数，HTTP 请求结果都需要新增一个相同的特殊判断等。</p>
+                            <h3 id="he-li-de-fu-wu-gui-hua"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#he-li-de-fu-wu-gui-hua"
+                                    name="he-li-de-fu-wu-gui-hua"></a><span>合理的服务规划</span></h3>
+                            <p>在团队中，迎合业务需求的项目，需要有明确的服务资源规划。</p>
+                            <p>是依赖现有服务资源的，例如资源是放到自己的服务器，还是托管到 CDN 上，代码在基于公司还是其他第三方构建平台，服务是否部署 Nodejs，部署是和后端服务在一起还是分离？
+                            </p>
+                            <p>这些问题都会影响着项目如何进行自动工程化，如何部署等代码之外的，这在项目架构中也应该合理的调度结合项目现有资源。</p>
+                            <p>例如我们会自行编写一些脚本，自动启动测试服务，上线之前编译的时候，连接公司的编译平台，然后再通过公司的线上平台上 docker，上线过程中自动将资源上传到 CDN。</p>
+                            <p>这一整套的工程都应该是在项目架构中解决，而不能把问题抛给开发人员，尽可能的让开发人员能够快速沉浸写码即可。</p>
+                            <p>同时要需要确定项目兼容性，列出项目兼容列表。尤其是移动端，可以列出市面上 Top 10 的移动设备作为基本兼容面，在后续统计产品访问量的时候更新兼容设备列表。</p>
+                            <h3 id="gui-fan-hua-yue-shu-he-feng-ge"><a class="saidfont icon-yinyong hash"
+                                    aria-hidden="true" href="#gui-fan-hua-yue-shu-he-feng-ge"
+                                    name="gui-fan-hua-yue-shu-he-feng-ge"></a><span>规范化约束和风格</span></h3>
+                            <p>根据团队风格确定整个项目的编码风格，使用 <a href="//tasaid.com/link?url=http%3A%2F%2Feslint.cn%2F" title=""
+                                    target="_blank">eslint</a> 或 <a
+                                    href="//tasaid.com/link?url=https%3A%2F%2Fpalantir.github.io%2Ftslint%2F" title=""
+                                    target="_blank">tslint</a> 确定编码风格，开发中强制开启编译检查。</p>
+                            <p>在这里，我个人仍然觉得，任何的代码风格和约束，都比不上 code review。在团队风格搭建初期，尤其 code review 至关重要。</p>
+                            <h3 id="he-li-de-tong-yong-xing"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#he-li-de-tong-yong-xing"
+                                    name="he-li-de-tong-yong-xing"></a><span>合理的通用性</span></h3>
+                            <p>这里的之所以用 "合理" 来表述，是用来反驳一昧追求通用性的设计。从一开始的设计中强行抽离业务、抽离环境，自己造轮子，过分追求通用性，对项目的危害更大。</p>
+                            <p>通用性应该是在真实实践过后，根据遇到的场景逐渐抽离出来的通用性，而不是一开始就刻意设计会通用，阻碍业务之后，死板着一个理念
+                                “不行我不能掺和业务，这设计一定得通用”，从而起到反面效果。</p>
+                            <h3 id="fen-ceng"><a class="saidfont icon-yinyong hash" aria-hidden="true" href="#fen-ceng"
+                                    name="fen-ceng"></a><span>分层</span></h3>
+                            <p>除了根据功能分层之外，在业务逻辑上也需要有合理的分层规划，前端并不应该仅仅只是简单的拿到数据做展现，要针对不同的业务场景，在搭建项目初期就针对业务做逻辑分层，并保留业务层的逻辑。
+                            </p>
+                            <p>推荐的分层逻辑：</p>
+                            <ul>
+                                <li>逻辑分层 - 按照业务逻辑进行分层切割</li>
+                                <li>UI 分层 - 按照页面的数据展现，聚合和切割 UI，包括 UI 数据的分层</li>
+                                <li>服务分层 - 服务分层包含了对数据和接口的服务分层整理</li>
+                            </ul>
+                            <h3 id="shu-ju-liu"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#shu-ju-liu" name="shu-ju-liu"></a><span>数据流</span></h3>
+                            <p>前端的本质是操作数据，数据输入到服务器，输出到页面中，是一个数据流转的过程。数据是通过单向数据流(flux)，还是双向数据绑定。</p>
+                            <p>这里不应该过分追求某一数据流向的形式，而是针对业务场景，在合适的场景，做合适的事情。</p>
+                            <h3 id="ke-pei-zhi"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#ke-pei-zhi" name="ke-pei-zhi"></a><span>可配置</span></h3>
+                            <p>无论是业务逻辑还是业务运营位，项目的细节（例如服务端口），做到适度可配置化，从而让项目的可重用性更高。</p>
+                            <h3 id="zu-jian-he-mo-kuai"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#zu-jian-he-mo-kuai" name="zu-jian-he-mo-kuai"></a><span>组件和模块</span></h3>
+                            <p>这是一个老生常谈的问题，复杂的业务必然有自己的业务模型和 UI 模型，对应衍生出组件（Component）和模块（Module）的概念：</p>
+                            <ul>
+                                <li>组件 - 强调复用，核心关注 UI</li>
+                                <li>模块 - 强调职责，它是一个业务行为的打包</li>
+                            </ul>
+                            <h3 id="jian-jin-shi-you-hua"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#jian-jin-shi-you-hua" name="jian-jin-shi-you-hua"></a><span>渐进式优化</span></h3>
+                            <p>和上面提到的 “反驳一昧追求通用性的设计” 相似，任何架构和设计，都不是在起初都尽善尽美。我们应该在项目需求渐进中，逐步优化现有解决方案。</p>
+                            <p>尤其需要注意的是，尽可能避免重复造轮子，先做分内事，再横向扩展。虽然前端er
+                                们都是一群皂动不安的人群，但在业务之中应该理清先后顺序，不能一昧追求自己技术的快感从而影响了业务稳定的本质。</p>
+                            <p>在这里个人推崇的思想是：先做好架构，再做完整的解决方案。</p>
+                            <h3 id="zi-dong-hua"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#zi-dong-hua" name="zi-dong-hua"></a><span>自动化</span></h3>
+                            <p>自动化可以很好的解放生产力，我们应该学会偷懒，为了让自己偷懒而做好自动化。任何繁琐的手动操作都应该去尝试自动化，在这一领域就需要自己丰富的横向知识面，这里自动化尤其关注这几点：
+                            </p>
+                            <ol>
+                                <li>一键打包</li>
+                                <li>一键启动开发环境</li>
+                                <li>一键部署测试环境</li>
+                                <li>一键部署生产环境</li>
+                                <li>一键上传部署资源</li>
+                            </ol>
+                            <p>当然这应该是一个现代优秀解决方案的基本面，在实际的应用场景中，应该结合公司，或者开源社区的各种持续集成平台，汇聚各大工具的优势而简化我们后续部署等重复而又繁琐的工作。</p>
+                            <h3 id="ming-que-de-zhi-biao"><a class="saidfont icon-yinyong hash" aria-hidden="true"
+                                    href="#ming-que-de-zhi-biao" name="ming-que-de-zhi-biao"></a><span>明确的指标</span></h3>
+                            <p>所有的工作应该是可以被量化的，优化了什么环节，必然会来优化的成果，从一开始就应该对成果有一个量化的指标，例如：</p>
+                            <ul>
+                                <li>页面加载时间 &lt;= 1.2s </li>
+                                <li>code review &gt;= 80%</li>
+                                <li>typescript 类型补充 &gt;= 90%</li>
+                                <li>包大小 &lt;= 1mb</li>
+                                <li>部署时间 &lt;= 10ms</li>
+                                <li>组件和模块数量</li>
+                                <li>重复代码在 &lt;= 20 份（或 100 行）</li>
+                                <li>http 请求数 &lt;= 40</li>
+                                <li>store 数据仓储 &lt;= 20</li>
+                            </ul>
+                            <p>还有很多可量化指标，这些可量化指标用于最终验收成果，或者在不断的 code review 中精进代码和团队风格有着决定性的作用。</p>
+                            <p>当然，还有 KPI....</p>
+                            <h2 id="jie-yu"><a class="saidfont icon-yinyong hash" aria-hidden="true" href="#jie-yu"
+                                    name="jie-yu"></a><span>结语</span></h2>
+                            <p>这篇文章主要给大家讲解了 JavaScript 历史的演变，和社区对于优秀解决方案的探索，并且指出了一些设计思路。</p>
+                            <p>《Web 前端解决方案指南》在一个系列文章，在后续的文章中我们会逐渐探索现代 Web 应用中的一些常见的 Web 前端架构形式和对应的解决方案，分别包括 Webapp、分片
+                                Web、前端服务（Webapp + node）、electron 等。欢迎关注我的博客 。</p>
+                            <blockquote>
+                                <p>66666666666666666666666666666666666666666666</p>
+                            </blockquote>
+                        </section>
+
+                        <div class="more">
+                            <div class="other"><a class="button like" id="user-like"><span id="like-text">点赞</span><span
+                                        id="link-num" data-num="20">20</span></a></div>
+                        </div>
+                    </article>
+                    <div class="article-other-info">
+                        <time>发布于
+                            2022-09-03 20:41</time>
+
+                    </div>
+
+                </section>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer id="footer">
+        <section class="content">
+            <div class="footer-item friends">
+                <div class="title">推荐</div>
+                <div><a class="link" href="/link?url=https%3A%2F%2Ftslang.cn%2F" target="_blank">TypeScript 中文网</a>
+                </div>
+                <div><a class="link"
+                        href="/link?url=%2F%2Fshang.qq.com%2Fwpa%2Fqunwpa%3Fidkey%3De42d074293d1ec3d6fd5ca632323494193f2ccb1f51e7b545ca413d627895b7d"
+                        target="_blank">QQ 群：377786580</a></div>
+            </div>
+            <div class="footer-item">
+                <div class="title">许可</div>
+                <p>本站原创并且没有注明相关许可协议的内容，默认请参考<a class="link" href="/blog/2018030702145515.html" target="_blank">《Said
+                        转载授权说明》</a>进行许可。非原创内容遵循原文许可协议</p>
+            </div>
+            <div class="footer-item">
+                <div class="title">联系方式</div>
+                <p>内容基本都是自己原创的，引用的地方都会给出相关引用，如有疏漏，联系方式：linkFly6<i class="saidfont icon-at"></i>live.com</p>
+            </div>
+        </section>
+        <div class="copyright">©2019 Said:听说 - linkFly - <a class="link"
+                href="/link?url=http%3A%2F%2Fwww.miitbeian.gov.cn%2F" target="_blank">皖ICP备 16018864 号</a></div>
+    </footer>
+</body>
+
+</html>
