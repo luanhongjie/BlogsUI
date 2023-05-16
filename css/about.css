@@ -1,0 +1,25 @@
+.about-box {
+    display: flex;
+}
+
+.box-left {
+    padding-right: 2rem;
+    border-right: 2px dotted #eee;
+}
+
+.box-right {
+    padding-left: 2rem;
+}
+
+.about-section p {
+    width: 90%;
+    text-align: justify;
+    line-height: 40px;
+    text-indent: 2em;
+    font-size: 14px;
+    text-shadow: 10px 10px 10px #909090;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgba(40, 40, 40, 0.9);
+    border-bottom: 1px dashed rgba(40, 40, 40, 0.2);
+}
